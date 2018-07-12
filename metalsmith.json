@@ -1,0 +1,32 @@
+{
+  "source": "src",
+  "destination": "build",
+  "plugins": {
+    "metalsmith-debug": {},
+    "metalsmith-drafts": true,
+    "metalsmith-collections": {
+      "posts": {
+        "pattern": "blog/*.md",
+        "reverse": true,
+        "sortBy": "publishDate"
+      }
+    },
+    "metalsmith-markdown": true,
+    "metalsmith-permalinks": {
+      "relative": false,
+      "linksets": [{
+        "match": {
+          "collection": "posts"
+        },
+        "pattern": "blog/:publishDate/:title"
+      }]
+    },
+    "metalsmith-date-formatter": {
+      "dates": [{
+        "key": "publishDate",
+        "format": "YYYY MMM D"
+      }]
+    },
+    "metalsmith-in-place": true
+  }
+}
