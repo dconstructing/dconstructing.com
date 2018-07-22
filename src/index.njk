@@ -1,5 +1,8 @@
 ---
-title: This is a variable, defined in the file's frontmatter
+title: Home
 ---
-<h1>{{ title }}</h1>
-<p>Some text here.</p>
+{% extends "first.njk" %}
+
+{% block content %}
+<h1>Welcome to dConstructing</h1>
+{% endblock %}

@@ -27,6 +27,10 @@
         "format": "YYYY MMM D"
       }]
     },
-    "metalsmith-in-place": true
+    "metalsmith-in-place": {
+      "engineOptions": {
+        "path": "layouts"
+      }
+    }
   }
 }
