@@ -25,7 +25,7 @@
     "dev": "npm-run-all --parallel serve watch",
     "serve": "http-server ./build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "chokidar \"**/*.njk\" -c \"npm run build\""
+    "watch": "chokidar \"**/*.njk\" \"**/*.md\" -c \"npm run build\""
   },
   "repository": {
     "type": "git",
