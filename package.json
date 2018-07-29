@@ -4,6 +4,7 @@
   "description": "The repository for the site found at dconstructing.com",
   "main": "index.js",
   "dependencies": {
+    "bulma": "^0.7.1",
     "chokidar-cli": "^1.2.0",
     "http-server": "^0.11.1",
     "jstransformer-nunjucks": "^0.5.0",

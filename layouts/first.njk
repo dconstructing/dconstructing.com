@@ -1,14 +1,27 @@
 <!doctype html>
 <html>
-  <head>
-    <title>{{ title }} | dConstructing</title>
-    {% block scripts %}{% endblock %}
-  </head>
-  <body>
-    {% block content %}{% endblock %}
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{ title }} | dConstructing</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" integrity="sha256-zKA1Bf41O96+gJSlkn/Bh2HATW/OhwkApPlYTp3B5O8=" crossorigin="anonymous" />
+		{% block scripts %}{% endblock %}
+	</head>
+	<body>
+		<div class="columns">
+			<div class="column is-narrow">
+				<a href="https://github.com/losttime">GitHub</a>
+				<a href="https://www.linkedin.com/in/davidgawaincox/">LinkedIn</a>
+			</div>
 
-    <footer>
-      <a href="/mining/monero.html">Mine Monero</a>
-    </footer>
-  </body>
+			<div class="column">
+				{% block content %}{% endblock %}
+			</div>
+		</div>
+
+		<footer>
+			<a href="/">Home</a>
+			<a href="/mining/monero.html">Mine Monero</a>
+		</footer>
+	</body>
 </html>
