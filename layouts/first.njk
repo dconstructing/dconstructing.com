@@ -7,23 +7,19 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" integrity="sha256-zKA1Bf41O96+gJSlkn/Bh2HATW/OhwkApPlYTp3B5O8=" crossorigin="anonymous" />
 		{% block scripts %}{% endblock %}
 	</head>
-	<body>
-		<div class="columns">
-			<div class="column is-narrow">
-				<p>David Cox</p>
-				<a href="https://github.com/losttime">GitHub</a>
-				<a href="https://www.linkedin.com/in/davidgawaincox/">LinkedIn</a>
+	<body class="has-navbar-fixed-top">
+		<nav class="navbar is-fixed-top">
+			<div class="navbar-brand">
+				<a href="/" class="navbar-item">dConstructing</a>
+				<a href="/blog" class="navbar-item">Blog</a>
+				<a href="/mining/monero.html" class="navbar-item">Mining</a>
+				<a href="https://github.com/losttime" class="navbar-item">GitHub</a>
+				<a href="https://www.linkedin.com/in/davidgawaincox/" class="navbar-item">LinkedIn</a>
 			</div>
+		</nav>
 
-			<div class="column">
-				{% block content %}{% endblock %}
-			</div>
-		</div>
-
-		<footer class="footer">
-			<a href="/">Home</a>
-			<a href="/blog">Blog</a>
-			<a href="/mining/monero.html">Mine Monero</a>
-		</footer>
+		<section class="section">
+			{% block content %}{% endblock %}
+		</section>
 	</body>
 </html>
