@@ -31,6 +31,7 @@
       "engineOptions": {
         "path": "layouts"
       }
-    }
+    },
+    "metalsmith-layouts": true
   }
 }
