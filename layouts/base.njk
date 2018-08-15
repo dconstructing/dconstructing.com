@@ -9,29 +9,6 @@
 		{% block scripts %}{% endblock %}
 	</head>
 	<body>
-		<section class="hero is-fullheight">
-			<div class="hero-head">
-				<div class="navbar">
-					<div class="navbar-brand">
-						<a href="/" class="navbar-item">dConstructing</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="hero-body">
-				{% block content %}{% endblock %}
-			</div>
-
-			<div class="hero-foot">
-				<div class="tabs is-medium is-centered">
-					<ul>
-						<li class="is-active"><a>Home</a></li>
-						<li><a href="/blog">Blog</a></li>
-						<li><a href="https://github.com/losttime"><span class="icon fab fa-github-square"></span> GitHub</a></li>
-						<li><a href="https://www.linkedin.com/in/davidgawaincox/"><span class="icon fab fa-linkedin"></span> LinkedIn</a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
+		{% block content %}{% endblock %}
 	</body>
 </html>
