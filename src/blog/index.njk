@@ -6,11 +6,11 @@ title: Blog
 
 {% block pageContent %}
 	{% for post in collections.posts %}
-		<div class="width-text">
-			<div class="post">
-				<p class="mocktitle"><a href="/{{ post.path }}">{{ post.title }}</a> - <span class="publishdate">{{ post.publishDate }}</span></p>
-				<p class="summary">{{ post.summary }}</p>
-				<p class="tail"><a href="/{{ post.path }}">Read More</a></p>
+		<div class="box">
+			<div class="content">
+				<h2 class="title"><a href="/{{ post.path }}">{{ post.title }}</a></h2>
+				<p>{{ post.summary }}</p>
+				<p>{{ post.publishDate }}</p>
 			</div>
 		</div>
 	{% endfor %}
