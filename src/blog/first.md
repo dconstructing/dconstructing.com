@@ -1,8 +1,8 @@
 ---
-title: Code stewardship
-summary: We need to stop talking about code ownership
+title: Code Stewardship
+summary: We need to stop talking about Code Ownership.
 author: David Cox
-publishDate: 2018-07-29
+publishDate: 2018-08-19
 layout: post.njk
 ---
 
@@ -52,5 +52,17 @@ are passed over, their deadlines are shortened, or their projects are
 reprioritized?
 
 If that same engineering organization has instead invested time evangelizing
-Code Stewardship, how might the responses of their engineers be different when
+Code Stewardship, how might the reactions of their engineers be different when
 faced with the same circumstances?
+
+## Conclusion
+
+I suspect most engineers and managers know what each other mean when they talk
+about Code Ownership. No one expects to walk out the door in possession of the
+company's source code - at least not without being very secretive about it.
+
+Be that as it may, employer and employee still owe it to one another to
+represent their intentions plainly and honestly. If an organization is marketed
+to recruits with hyperbole and vague assertions, it can't be too put-off if,
+even years later, those recruits don't like what they find when they see past
+the smoke and mirrors.
