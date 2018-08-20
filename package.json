@@ -17,11 +17,13 @@
     "metalsmith-layouts": "^2.0.0",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-permalinks": "^0.5.0",
-    "npm-run-all": "^4.1.3"
+    "npm-run-all": "^4.1.3",
+    "scp2": "^0.5.0"
   },
   "devDependencies": {},
   "scripts": {
     "build": "metalsmith",
+    "deploy": "scp2 build/ username:password@104.131.164.107:/srv/http/dconstructing.com/",
     "dev": "npm-run-all --parallel serve watch",
     "serve": "http-server ./build",
     "test": "echo \"Error: no test specified\" && exit 1",

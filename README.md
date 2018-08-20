@@ -2,6 +2,7 @@
 The repository for the site found at dconstructing.com
 
 `npm run dev`
+`npm run deploy`
 
 # Resources
 - Working with nunjucks and markdown
