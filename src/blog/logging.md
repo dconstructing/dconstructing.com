@@ -21,12 +21,13 @@ interested in. Additionally, logs take up space - and while storage space is
 getting cheaper these days, it's not free.
 
 The best thing you can do about noisy logs is utilize a log management system
-(like Splunk or an ELK stack). It allows you to filter and sort your logs in any
-number of ways, making it much easier to understand what's being reported. Once
-you've got a handle on how the management system works, additional logs can
-actually be preferable to fewer. With more logs it's easier to identify
-precisely where things are going wrong in your code, making debugging so much
-easier.
+(like [Splunk](https://www.splunk.com/) or an
+[ELK stack](https://www.elastic.co/elk-stack)). It allows you to filter and sort
+your logs in any number of ways, making it much easier to understand what's
+being reported. Once you've got a handle on how the management system works,
+additional logs can actually be preferable to fewer. With more logs it's easier
+to identify precisely where things are going wrong in your code, making
+debugging so much easier.
 
 Eventually your logs will start to fill up disk space. When that time comes
 there are only so many things you can do. You can pay for more disk space or get
