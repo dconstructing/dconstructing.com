@@ -1,5 +1,5 @@
 # dconstructing.com
-The repository for the site found at dconstructing.com
+The repository for the site found at [dconstructing.com](http://dconstructing.com/)
 
 `npm run dev`
 `npm run deploy`
