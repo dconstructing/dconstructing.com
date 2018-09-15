@@ -1,8 +1,8 @@
 ---
-title: Logging
-summary: When you should and shouldn't log stuff
+title: You Need More Logs
+summary: Why more logs are always better than fewer
 author: David Cox
-publishDate: 2018-08-19
+publishDate: 2018-09-14
 layout: post.njk
 ---
 
@@ -59,6 +59,18 @@ will potentially leave out some critical details, handicapping the process.
 Furthermore turning up the logging after a problem occurs misses the most
 important information. When finding the root cause, it's important to know how
 the problem started - not just how the latest occurrence was manifested.
+
+For example, today I was able to utilize logs to help debug a potentially
+mind-boggling situation. I was made aware of a client that was experiencing
+problems performing a basic task in a production system. My go-to debugging
+strategy is to check the logs to see where things got off track. The symptoms of
+the issue were immediately apparent, but the source of the problem was a little
+less clear. After a bit more debugging I discovered that the problems the client
+was having today were due to a system error that took place last week when the
+client was initially onboarded. Sure, a better error detection system would have
+caught the issue a week ago - but we didn't know the error was something to look
+out for a week ago. Detailed logging allowed us to look back in time and catch
+the bug at its root.
 
 Set up a healthy log infrastructure. Once you're in need of those details you'll
 be glad you took the time.
